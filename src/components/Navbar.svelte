@@ -79,10 +79,10 @@
      <main class=" flex  items-start px-7 my-auto">
         <div style="font-family: Museo-Sans, sans-serif;" class="flex my-auto  {scrolled?'text-black':'text-black'}">
             <a href="/"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">HOME</a>
-            <a href="/leap-co-works"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">ABOUT</a>
-            <a href="/leap-membership"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">TIMELINE</a>
+            <a href="/#about"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">ABOUT</a>
+            <a href="/#timeline"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">TIMELINE</a>
             
-            <a href="/#facility-booking"  class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm">TRACKS</a>
+            <a href="/#tracks"  class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm">TRACKS</a>
             <!-- <a href="/#LEAP_Membership"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Partners</a> -->
            
         </div>
@@ -107,7 +107,7 @@
     {menu_open?'translate-x-0':''}
    ">
      <div class="flex bg-white top-4 absolute spl_cursor">   
-        <button on:click="{()=> menu_open = !menu_open }" class="z-50 spl_cursor bg-black cursor-pointer fixed right-5 w-10 h-10 text-xl ml-auto transition duration-150 hover:shadow leading-none px-2 py-1  -solid -transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
+        <button on:click="{()=> menu_open = !menu_open }" class="z-50 spl_cursor bg-black cursor-pointer fixed right-5 w-10 h-10 text-xl ml-auto transition duration-150 leading-none px-2 py-1  -solid -transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
             <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-white top-3 duration-500 { menu_open ? 'opacity-0':'' }" ></span>
             <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-white duration-500 { menu_open ? 'transform rotate-45':'' }"></span>
             <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-white duration-500 { menu_open ? 'transform -rotate-45':'' }"></span>
@@ -118,7 +118,7 @@
   
     <div class="w-fit container mx-auto sm:items-center sm:justify-between">
         <div class="mb-8 gap-2  font-medium sm:bg-transparent p-5 sm:p-0 rounded-md flex items-center justify-center">
-            <img src="/img/logo11.svg" alt="logo" class="md:h-14 h-12">
+            <img src="/img/logo-white.svg" alt="logo" class="md:h-14 h-12">
         </div>
          <nav>
             <ul class=" md:text-sm gap-2 font-data">
@@ -126,13 +126,13 @@
                         <a href="/"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">Home</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/leap-co-works"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP CO-WORKS</a>
+                      <a href="/#about"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">about</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#leap-membership"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP MEMBERSHIP</a>
+                      <a href="/#timeline"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">timeline</a>
                     </li> 
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#facility-booking"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">FACILITY BOOKING</a>
+                      <a href="/#tracks"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">tracks</a>
                     </li>
   
                     
